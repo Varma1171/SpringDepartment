@@ -21,6 +21,7 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	
+	//adding exception handling
 	@PostMapping
 	public ResponseEntity<Department> saveDepartment(@RequestBody Department department){
 		if(department.getDepartmentName()== null || department.getDepartmentName().isEmpty()) {
